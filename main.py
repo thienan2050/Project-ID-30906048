@@ -55,7 +55,7 @@ with open('data.csv', 'r') as file:
     
 
 for i in range(0, total):
-    print cardNumber[i]+'|'+cardExp[i]+'|'+securityCode[i]+'|'+fullName[i]+'|'+address[i]+'|'+town[i]+'|'+location[i]+'|'+phoneNumber[i]+'|'+emailAddress[i]+'|'+DOBirth[i]+'|'+sortCode[i]+'|'+account[i]+'|'+submitted[i]    
+    print(cardNumber[i]+'|'+cardExp[i]+'|'+securityCode[i]+'|'+fullName[i]+'|'+address[i]+'|'+town[i]+'|'+location[i]+'|'+phoneNumber[i]+'|'+emailAddress[i]+'|'+DOBirth[i]+'|'+sortCode[i]+'|'+account[i]+'|'+submitted[i])
 
 with open("output.txt",'w') as f:
     for i in range(0, total):
