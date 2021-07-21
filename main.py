@@ -18,11 +18,13 @@ total = 0
 
 
 
-with open('data.csv', 'r') as file:
+with open('messages2.csv', 'r') as file:
     i = 0
     reader = csv.reader(file)
     for row in reader:
-        if '----------- Personal Login -----------' in row[0]:
+        if len(row) == 0:
+            continue
+        if 'Personal Login' in row[0]:
             total+=1
         if 'Full name' in row[0]:
             fullName.append(row[0].split(':')[1].strip())
