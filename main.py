@@ -37,7 +37,7 @@ with open('data.csv', 'r') as file:
             phoneNumber.append(row[0].split(':')[1])
         if (index % 33) == 11:
             town.append(row[0].split(':')[1])
-        if (index % 33) == 13:
+        if (index % 33) == 19:
             cardNumber.append(row[0].split(':')[1] )
         if (index % 33) == 20:
             cardExp.append(row[0].split(':')[1])
